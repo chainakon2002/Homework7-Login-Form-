@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login Form+</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+    *{font-family: 'Kanit', sans-serif;}
+  </style>
+</head>
+<body>
+    <h1>Homework 7 : Login Form</h1>
+<hr />
+<br />
+
+<p>Username : Chainakon </p>
+ <p>Password : Film.02</p> 
+<form class="login-form">
+    <div class="text-center fs-2 fw-bold">ลงชื่อเข้าใช้</div>
+    <br>
+  <div class="form-floating">
+    <input type="text" name="username" id="username" class="form-control" placeholder="Username" required autofocus>
+    <label for="inputUsername">Username</label>
+    <div id="msgErrorUsername" style="color: red;"></div><br />
+</div>
+<div class="form-floating">
+    <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+    <label for="inputPassword">Password</label>
+    <div id="msgErrorPassword" style="color: red;"></div>
+</div>
+
+  <select  name="role" id="role">
+    <option value="" selected disabled>Select Role</option>
+    <option value="buyer">Buyer</option>
+    <option value="seller">Seller</option>
+    <option value="visitor">Visitor</option>
+  </select>
+  <input type="submit" class="btn btn-info text-white w-100 mt-4" value="Login" />
+</form>
+
+
+
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
+
